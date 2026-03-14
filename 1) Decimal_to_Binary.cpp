@@ -12,12 +12,13 @@ int main(){
       // rem = number % 2;
       rem = number & 1;
       //quotient
-      number /= 2;
+      // number /= 2;
+      number = number >> 1;
       //answer
-      ans = ans + rem * i;
+      ans += rem * i;
       //multiplied by 10 to get the next place value
       i = i * 10;
    }
    cout << "Binary Number: " << ans << endl;
-   return -1;
+   return 0;
 }
