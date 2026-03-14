@@ -9,7 +9,8 @@ int main(){
    int rem, ans = 0, i = 1;
    while(number>0){
       //remainder
-      rem = number % 2;
+      // rem = number % 2;
+      rem = number & 1;
       //quotient
       number /= 2;
       //answer
